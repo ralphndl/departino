@@ -20,7 +20,11 @@ endorsed by Ruter or Entur.**
 - Walking-time filters, adjustable text size and light / dark / automatic themes.
 - Provider-specific timezones, line colours and source attribution, including PNGs.
 
-![Departino running on an Android tablet](media/sample-android.png)
+<p align="center">
+  <a href="media/departino_close_I.jpg"><img src="media/departino_close_I.jpg" width="720" alt="Departino on a wall-mounted tablet, with Disen tram departures in focus"></a>
+</p>
+
+*Departino at home — live departures on a wall-mounted tablet.*
 
 ## Pick your screen
 
@@ -33,10 +37,19 @@ endorsed by Ruter or Entur.**
 - **Picture display:** use the PNG endpoint with a dashboard, e-paper setup or
   picture display that can periodically fetch an image URL.
 
-The practical setup here: a **Samsung Galaxy Tab 9 in a wall mount**. Motion
-detection can wake the screen when someone approaches. Arrange that through your
-preferred tablet or home-automation setup; screen activation is separate from
-this app.
+### Android in practice
+
+The practical setup here: a **Samsung Galaxy Tab 9 in a wall mount**, opening
+Departino from a server on the same network.
+
+Many Android kiosk apps offer handy features for a wall display, such as full-screen
+mode, screensavers and motion detection. For example,
+[Fully Kiosk Browser](https://www.fully-kiosk.com/en/#motiondetection) can use the
+tablet's camera to detect motion and wake the screen when someone approaches
+(a PLUS feature). Configure this in your kiosk app or home-automation setup;
+Departino takes care of the departures.
+
+![Departino running in a browser on an Android tablet](media/departino_sample-android.png)
 
 ## Start with Docker
 
@@ -147,6 +160,12 @@ The size/theme buttons remember per-browser choices and override the file defaul
 
 URL parameters can override stops and count for an individual screen:
 `/?stopId=58366&modes=tram,metro&count=6`. Repeat `stopId` for more stops.
+
+<p align="center">
+  <a href="media/departino_close_II.jpg"><img src="media/departino_close_II.jpg" width="720" alt="Departino on a wall-mounted tablet, with Storo metro, tram and bus departures in focus"></a>
+</p>
+
+*Several stops and transport modes, brought together on one screen.*
 
 ## Just the picture
 
